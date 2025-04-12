@@ -4,9 +4,9 @@ const router = express.Router()
 const { sendTemplate, transporter } = require('../utils/mail');
 
 router.get('/send', (req, res) => {
-    const { user, qrCode } = req.body;
+    const { user, qrCodeUrl } = req.body;
 
-    if (!user || !user.email || !qrCode) {
+    if (!user || !user.email || !qrCodeUrl) {
         return res.status(400).json({ message: 'missing user or QR code data', type: 'error' });
     }
 
