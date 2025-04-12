@@ -3,7 +3,11 @@ const router = express.Router()
 
 const { sendTemplate, transporter } = require('../utils/mail');
 
-router.get('/send', (req, res) => {
+router.get('/', (req, res) => {
+	res.send('gmail endpoint')
+})
+
+router.post('/send', (req, res) => {
     const { user, qrCodeUrl } = req.body;
 
     if (!user || !user.email || !qrCodeUrl) {
