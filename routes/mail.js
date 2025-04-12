@@ -26,7 +26,7 @@ router.post('/send', (req, res) => {
     };
 
     try {
-        sendTemplate('simple-ticket', templateData, user.email, 'Your Event Ticket');
+        sendTemplate('simple-ticket', templateData, user.email, 'Your Event Ticket', transporter);
         res.status(200).json({ message: 'email sent', type: 'success' });
     } catch (err) {
         console.error('email error:', err);
