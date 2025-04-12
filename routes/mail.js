@@ -14,6 +14,8 @@ router.post('/send', (req, res) => {
         return res.status(400).json({ message: 'missing user or QR code data', type: 'error' });
     }
 
+    console.log(`emailing user: ${user.email}`);
+
     const templateData = {
         name: user.firstName,
         lastName: user.lastName,
