@@ -20,7 +20,7 @@ router.post('/send', (req, res) => {
         email: user.email,
         table: user.table,
         dietary: user.dietaryPreferences || 'None',
-        qrCode: qrDataURL,
+        qrCode: qrDataUrl,
     };
 
     try {
