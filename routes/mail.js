@@ -17,16 +17,15 @@ router.post('/send', (req, res) => {
     console.log(`emailing user: ${user.email}`);
 
     const templateData = {
-        name: user.firstName,
+        firstName: user.firstName,
         lastName: user.lastName,
-        email: user.email,
         table: user.table,
         dietary: user.dietaryPreferences || 'None',
         qrCode: qrCodeUrl,
     };
 
     try {
-        sendTemplate('simple-ticket', templateData, user.email, 'Your Event Ticket', transporter);
+        sendTemplate('ticket', templateData, user.email, 'Community Over Cancer 2025 - Registration Successful', transporter);
         res.status(200).json({ message: 'email sent', type: 'success' });
     } catch (err) {
         console.error('email error:', err);

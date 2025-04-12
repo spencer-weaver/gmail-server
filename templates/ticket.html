@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Over Cancer - Entry Ticket</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background-color: #1e1e1e;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .highlight {
+      color: #ff7f7f;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .section {
+      margin-top: 30px;
+      border: 1px solid #ff7f7f;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .qr-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 20px;
+    }
+    a {
+      color: #4db8ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>COMMUNITY</h1>
+  <h2>OVER CANCER</h2>
+
+  <div class="highlight">ENTRY TICKET</div>
+
+  <p>Dear {{firstName}} {{lastName}},</p>
+  <p>Congratulations!</p>
+  <p>You are now officially registered to attend <strong>Community Over Cancer 12, Strathroy Caradoc Rocks!</strong></p>
+  <p>We are thrilled to have you join us for this meaningful event!</p>
+  <p><strong>*IMPORTANT — PLEASE READ*</strong><br>
+  Your QR Code ticket is included at the bottom of this email.<br>
+  Your Table Number is <strong>{{tableNumber}}</strong>.</p>
+
+  <div class="section">
+    <h3>EVENT DETAILS:</h3>
+    <p><strong>Venue:</strong> Gemini Sportsplex – 667 Adair Blvd, Strathroy, ON N7G 3H8<br>
+       <strong>Date:</strong> Saturday April 26th, 2025<br>
+       <strong>Time:</strong> Doors open at 4:30 pm – Dinner: 5:30 pm<br>
+       <strong>Attire:</strong> This is a semi-formal event. We kindly request you refrain from wearing jeans. Feel free to incorporate rock and roll themed attire into your suit, dress pants or dress attire. (Example: rock and roll T-shirt paired with a suit jacket and pants.)
+    </p>
+  </div>
+
+  <div class="section">
+    <h3>EVENT HIGHLIGHTS:</h3>
+    <ul>
+      <li>Enjoy the music of – Rob Cromwell, Time Machine – A Tribute to Rush, Limits of Approach, AXL/DC and of course – The Doubts!</li>
+      <li>Grab VIP passes to Jake’s Backstage Bar!</li>
+      <li>Support our featured bands and Community Over Cancer by visiting the merchandise booth!</li>
+    </ul>
+  </div>
+
+  <div class="qr-section">
+    <p><strong>Check out our very first ONLINE AUCTION!</strong> We have 10 incredible items up for bids!<br>
+    You can pre-bid on these items and share the link with friends who cannot attend!<br>
+    All proceeds from the auction will support Community Over Cancer causes, including Hospice of Strathroy.<br>
+    Get ready for an evening filled with excitement and entertainment!</p>
+
+    <img src="{{qrCode}}" alt="QR Code" width="200" height="200">
+  </div>
+
+  <div class="footer">
+    design by spencer weaver<br>
+    Community Over Cancer © 2024.
+  </div>
+
+</body>
+</html>
